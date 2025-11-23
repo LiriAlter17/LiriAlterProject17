@@ -9,8 +9,25 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
+    <a href="Form.aspx">Form.aspx</a> <a href="Register.aspx">Register.aspx</a>
     <h1>Master start</h1>
-        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+       <table>
+           <thead>
+               <td><a href="HomePage.aspx">Register</a></td>
+               <td><a href="About.aspx">Register</a></td>
+               <td><a href="Gallery.aspx">Register</a></td>
+               <td><a href="Register">Register</a></td>
+               <td><a href="Login.aspx">Register</a></td>
+               <td><a href="Manager.aspx">Register</a></td>
+               <td><a href="Search.aspx">Register</a></td>
+               <td><a href="UpdateDetails.aspx">Register</a></td>
+               <td><a href="Exit.aspx">Register</a></td>
+
+           </thead>
+       </table>
+    
+    
+    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
     <h1>Master end</h1>
