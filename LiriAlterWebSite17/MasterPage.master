@@ -4,7 +4,7 @@
 
 <html>
 <head runat="server">
-    <title></title>
+    <title>La17</title>
     <asp:ContentPlaceHolder id="head" runat="server">
 
 
@@ -12,33 +12,32 @@
 
 
     <style>
-/*		table,thead {
+		table,thead {
 		border: 2px solid black;
 		}
 
 		.color1{
-		color: blue;
-		background-color: yellow 
-		}*/
+		color: navy;
+		background-color: lightyellow; 
+		}
 		</style>
 
 </head>
 
 
 <body>
-    <a href="Form.aspx">Form.aspx</a> <a href="Register.aspx">Register.aspx</a>
     <h1>Master start</h1>
        <table>
            <thead>
-               <td><a href="HomePage.aspx"><img src="images/homepoage.png" langth="500px" width="100px"/></a></td>
-               <td><a href="About.aspx">About</a></td>
-               <td><a href="Gallery.aspx">Gallery</a></td>
-               <td><a href="Register.aspx">Register</a></td>
-               <td><a href="Login.aspx">Login</a></td>
-               <td><a href="Manager.aspx">Manager</a></td>
-               <td><a href="Search.aspx">Search</a></td>
-               <td><a href="UpdateDetails.aspx">UpdateDetails</a></td>
-               <td><a href="Exit.aspx">Exit</a></td>
+               <td><a href="HomePage.aspx"><img src="images/HomePage.png" /></a></td>
+               <td><a href="About.aspx"><img src="images/About.png" /></a></td>
+               <td><a href="Gallery.aspx"><img src="images/Gallery.png" /></a></td>
+               <td><a href="Register.aspx"></a><img src="images/Register.png" /></td>
+               <td><a href="Login.aspx"><img src="images/Login.png" /></a></td>
+               <td><a href="Manager.aspx"><img src="images/Manager.png" /></a></td>
+               <td><a href="Search.aspx"></a><img src="images/Search.png" /></td>
+               <td><a href="UpdateDetails.aspx"><img src="images/UpdateDetails.png" /></a></td>
+               <td><a href="Exit.aspx"><img src="images/Exit.png" /></a></td>
 
            </thead>
        </table>
