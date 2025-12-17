@@ -5,52 +5,104 @@
 <html>
 <head runat="server">
     <title>La17</title>
-    <asp:ContentPlaceHolder id="head" runat="server">
-
-
+    <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 
 
     <style>
-		table,thead {
-		border: 2px solid black;
-		}
+        table, thead {
+            border: 2px solid black;
+        }
 
-		.color1{
-		color: navy;
-		background-color: lightyellow; 
-		}
-		</style>
+        .color1 {
+            color: navy;
+            background-color: lightyellow;
+        }
+
+        .img-title {
+            width: 100%
+        }
+
+        .titleTd{
+            width:8.3%
+        }
+    </style>
 
 </head>
 
 
 <body>
     <h1>Master start</h1>
-       <table>
-           <thead>
-               <td><a href="HomePage.aspx"><img src="images/HomePage.png" /></a></td>
-               <td><a href="About.aspx"><img src="images/About.png" /></a></td>
-               <td><a href="Gallery.aspx"><img src="images/Gallery.png" /></a></td>
-               <td><a href="Register.aspx"></a><img src="images/Register.png" /></td>
-               <td><a href="Login.aspx"><img src="images/Login.png" /></a></td>
-               <td><a href="Manager.aspx"><img src="images/Manager.png" /></a></td>
-               <td><a href="Search.aspx"></a><img src="images/Search.png" /></td>
-               <td><a href="UpdateDetails.aspx"><img src="images/UpdateDetails.png" /></a></td>
-               <td><a href="Exit.aspx"><img src="images/Exit.png" /></a></td>
+    <table style="width: 100%">
 
-           </thead>
-       </table>
-    
-   
+        <tr class="title">
+            <td class="titleTd"><a href="HomePage.aspx">
+                <img class="img-title" src="images/HomePage.png" /></a></td>
+            <td><a href="About.aspx">
+                <img class="img-title" src="images/About.png" /></a></td>
+            <td class="titleTd"><a href="Gallery.aspx">
+                <img class="img-title" src="images/Gallery.png" /></a></td>
+            <td class="titleTd"><a href="Register.aspx">
+                <img class="img-title" src="images/Register.png" /></a></td>
+            <td class="titleTd"><a href="Login.aspx">
+                <img class="img-title" src="images/Login.png" /></a></td>
+            <td class="titleTd"><a href="Manager.aspx">
+                <img class="img-title" src="images/Manager.png" /></a></td>
+            <td class="titleTd"><a href="Search.aspx">
+                <img class="img-title" src="images/Search.png" /></a></td>
+            <td class="titleTd"><a href="ComplexSearch.aspx">
+                <img class="img-title" src="images/Search.png" /></a></td>
 
-    
-    
-    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            <td class="titleTd"><a href="SearchLike.aspx">
+                <img class="img-title" src="images/Search.png" /></a></td>
+
+            <td class="titleTd"><a href="ComplexSearchLike.aspx">
+                <img class="img-title" src="images/Search.png" /></a></td>
 
 
-        
-        </asp:ContentPlaceHolder>
-    <h1>Master end</h1>
+            <td class="titleTd"><a href="UpdateDetails.aspx">
+                <img class="img-title" src="images/UpdateDetails.png" /></a></td>
+            <td class="titleTd"><a href="Exit.aspx">
+                <img class="img-title" src="images/Exit.png" /></a></td>
+
+        </tr>
+        <tr>
+            <td colspan="9">
+
+
+
+
+
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+
+
+
+
+            </td>
+        </tr>
+    </table>
+
+
+    <table style="width: 100%">
+
+
+
+        <!-- Table body -->
+        <% for (int row = 1; row <= 10; row++)
+            { %>
+        <tr>
+
+            <% for (int col = 1; col <= 10; col++)
+                { %>
+            <td style="text-align: center"><%= row * col %></td>
+            <% } %>
+        </tr>
+        <% } %>
+    </table>
+
+
+
 </body>
 </html>
