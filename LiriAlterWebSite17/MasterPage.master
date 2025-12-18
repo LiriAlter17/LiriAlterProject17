@@ -23,8 +23,8 @@
             width: 100%
         }
 
-        .titleTd{
-            width:8.3%
+        .titleTd {
+            width: 8.3%
         }
     </style>
 
@@ -32,8 +32,9 @@
 
 
 <body>
-    <h1>Master start</h1>
-    <table style="width: 100%">
+
+
+    <table style="width: 100%" border="0">
 
         <tr class="title">
             <td class="titleTd"><a href="HomePage.aspx">
@@ -52,14 +53,10 @@
                 <img class="img-title" src="images/Search.png" /></a></td>
             <td class="titleTd"><a href="ComplexSearch.aspx">
                 <img class="img-title" src="images/Search.png" /></a></td>
-
             <td class="titleTd"><a href="SearchLike.aspx">
                 <img class="img-title" src="images/Search.png" /></a></td>
-
             <td class="titleTd"><a href="ComplexSearchLike.aspx">
                 <img class="img-title" src="images/Search.png" /></a></td>
-
-
             <td class="titleTd"><a href="UpdateDetails.aspx">
                 <img class="img-title" src="images/UpdateDetails.png" /></a></td>
             <td class="titleTd"><a href="Exit.aspx">
@@ -67,10 +64,7 @@
 
         </tr>
         <tr>
-            <td colspan="9">
-
-
-
+            <td colspan="12">
 
 
 
@@ -78,28 +72,8 @@
                 </asp:ContentPlaceHolder>
 
 
-
-
             </td>
         </tr>
-    </table>
-
-
-    <table style="width: 100%">
-
-
-
-        <!-- Table body -->
-        <% for (int row = 1; row <= 10; row++)
-            { %>
-        <tr>
-
-            <% for (int col = 1; col <= 10; col++)
-                { %>
-            <td style="text-align: center"><%= row * col %></td>
-            <% } %>
-        </tr>
-        <% } %>
     </table>
 
 
