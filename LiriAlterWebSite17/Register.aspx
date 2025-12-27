@@ -31,18 +31,18 @@
             </tr>
             <tr>
                 <td style="text-align: right">
-                    <input type="checkbox" name="FootbalCB" checked value="Footbal" id="FootbalCB"/></td>
-                <td>Footbal</td>
+                    <input type="checkbox" name="CB" checked value="Football" id="FootballCB"/></td>
+                <td>Football</td>
             </tr>
             <tr>
                 <td style="text-align: right">
-                    <input type="checkbox" name="BasketballCB" checked value="Basketdall" id="BasketballCB"/></td>
+                    <input type="checkbox" name="CB" value="Basketdall" id="BasketballCB"/></td>
                 <td>Basketball</td>
             </tr>
             <tr>
                 <td style="text-align: right">
-                    <input type="checkbox" name="SurfingCB" checked value="Surfing" id="SurfingCB"/></td>
-                <td>Basketball</td>
+                    <input type="checkbox" name="CB" value="Surfing" id="SurfingCB"/></td>
+                <td>Surfing</td>
             </tr>
             <tr>
                 <td colspan="2">Favorites Social media: 
@@ -52,7 +52,7 @@
             <tr>
                 <td style="padding-left:20px">Instergam</td>
                 <td>
-                    <input type="radio"  name="Social" checked value="Instergam" id="InstergamRB"/></td>
+                    <input type="radio" checked  name="Social" value="Instergam" id="InstergamRB"/></td>
             </tr>
 
             <tr>
@@ -85,7 +85,7 @@
                 <td style="vertical-align: top">Tell something abote yourself:
                 </td>
                 <td>
-                    <textarea rows="5" cols="20" name="textarea1" id="textarea1" placeholder="Enter text"></textarea>
+                    <textarea rows="5" cols="20" name="freeTextTA" id="freeTextTA" placeholdetextarea1r="Enter text"></textarea>
                 </td>
             </tr>
             <tr>
@@ -97,6 +97,23 @@
         </table>
 
 
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+
+        firstName: <% =firstName %> <br />
+        lastName: <% =lastName %> <br />
+        CB: <% =CB %> <br />
+        Social: <% =Social%><br />
+        age: <% =age%><br />
+        freeTextTA: <% =freeTextTA%><br />
+
+         
+        
 
 
 

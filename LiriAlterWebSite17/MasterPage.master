@@ -26,6 +26,9 @@
         .titleTd {
             width: 8.3%
         }
+        body{
+            background-color:lightcyan
+        }
     </style>
 
 </head>
