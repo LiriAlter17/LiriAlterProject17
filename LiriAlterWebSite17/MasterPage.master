@@ -42,7 +42,7 @@
         <tr class="title">
             <td class="titleTd"><a href="HomePage.aspx">
                 <img class="img-title" src="images/HomePage.png" /></a></td>
-            <td><a href="About.aspx">
+            <td class="titleTd"><a href="About.aspx">
                 <img class="img-title" src="images/About.png" /></a></td>
             <td class="titleTd"><a href="Gallery.aspx">
                 <img class="img-title" src="images/Gallery.png" /></a></td>
@@ -55,11 +55,11 @@
             <td class="titleTd"><a href="Search.aspx">
                 <img class="img-title" src="images/Search.png" /></a></td>
             <td class="titleTd"><a href="ComplexSearch.aspx">
-                <img class="img-title" src="images/Search.png" /></a></td>
+                <img class="img-title" src="images/ComplexSearch.png" /></a></td>
             <td class="titleTd"><a href="SearchLike.aspx">
-                <img class="img-title" src="images/Search.png" /></a></td>
+                <img class="img-title" src="images/SearchLike.png" /></a></td>
             <td class="titleTd"><a href="ComplexSearchLike.aspx">
-                <img class="img-title" src="images/Search.png" /></a></td>
+                <img class="img-title" src="images/ComplexSearchLike.png" /></a></td>
             <td class="titleTd"><a href="UpdateDetails.aspx">
                 <img class="img-title" src="images/UpdateDetails.png" /></a></td>
             <td class="titleTd"><a href="Exit.aspx">
