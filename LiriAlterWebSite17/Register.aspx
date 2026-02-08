@@ -105,12 +105,8 @@
         <br />
 
 
-        firstName: <% =firstName %> <br />
-        lastName: <% =lastName %> <br />
-        CB: <% =CB %> <br />
-        Social: <% =Social%><br />
-        age: <% =age%><br />
-        freeTextTA: <% =freeTextTA%><br />
+        <% =st%> <br />
+
 
          
         
