@@ -11,20 +11,28 @@ public partial class Register : System.Web.UI.Page
 
     public string st;
 
-    if (Page.IsPostBack)
+    protected void Page_Load(object sender, EventArgs e)
     {
 
-            protected void Page_Load(object sender, EventArgs e)
-            {
-                string firstName = Request.Form["firstName"];
-                string lastName = Request.Form["lastName"];
-                string CB = Request.Form["CB"];
-                string Social = Request.Form["Social"];
-                string age = Request.Form["age"];
-                string freeTextTA = Request.Form["freeTextTA"];
-            }
+
+
+
+        if (Page.IsPostBack)
+        {
+
+            string email = Request.Form["email"];
+            string password = Request.Form["password"];
+            string firstName = Request.Form["firstName"];
+            string lastName = Request.Form["lastName"];
+            string CB = Request.Form["CB"];
+            string Social = Request.Form["Social"];
+            string age = Request.Form["age"];
+            string freeTextTA = Request.Form["freeTextTA"];
+
             string sqlInsert =
             "INSERT INTO tUsers VALUES (" +
+            "N'" + email + "'," +
+            "N'" + password + "'," +
             "N'" + firstName + "'," +
             "N'" + lastName + "'," +
             "N'" + CB + "'," +
@@ -34,8 +42,9 @@ public partial class Register : System.Web.UI.Page
             ")";
 
             MyAdoHelper.DoQuery("MyDB.mdf", sqlInsert);
-     }
+        }
 
 
 
+    }
 }

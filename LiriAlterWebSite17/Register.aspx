@@ -10,6 +10,20 @@
     <form name="formPage" method="post" runat="server">
 
         <table>
+             <tr>
+                <td>Email: 
+                </td>
+                <td>
+                    <input type="text" name="email" id="email" placeholder="Enter email here">
+                </td>
+            </tr>
+             <tr>
+                <td>Password: 
+                </td>
+                <td>
+                    <input type="text" name="password" id="password" placeholder="Enter password here">
+                </td>
+            </tr>
             <tr>
                 <td>First name: 
                 </td>
