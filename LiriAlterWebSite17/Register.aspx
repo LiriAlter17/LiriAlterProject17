@@ -6,7 +6,7 @@
 
     <h1>Register.</h1>
 
-
+      
     <form name="formPage" method="post" runat="server">
 
         <table>
@@ -119,7 +119,7 @@
         <br />
 
 
-        <% =st%> <br />
+        <% =msg%> <br />
 
 
          

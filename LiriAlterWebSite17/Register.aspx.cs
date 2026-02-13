@@ -9,7 +9,7 @@ using System.Web.UI.WebControls;
 public partial class Register : System.Web.UI.Page
 {
 
-    public string st;
+    public string msg = "";
 
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -31,17 +31,31 @@ public partial class Register : System.Web.UI.Page
 
             string sqlInsert =
             "INSERT INTO tUsers VALUES (" +
-            "N'" + email + "'," +
-            "N'" + password + "'," +
             "N'" + firstName + "'," +
             "N'" + lastName + "'," +
             "N'" + CB + "'," +
             "N'" + Social + "'," +
             "N'" + age + "'," +
             "N'" + freeTextTA + "'," +
+            "N'" + email + "'," +
+            "N'" + password + "'" +
             ")";
 
-            MyAdoHelper.DoQuery("MyDB.mdf", sqlInsert);
+            string sql =
+            "SELECT * FROM tUsers " +
+            "WHERE Email = N'" + email + "' " +
+            "AND Password = N'" + password + "'";
+
+            bool userExists = MyAdoHelper.IsExist(sql);
+
+            if (userExists)
+            {
+                msg = "User already exists.";
+            }
+            else
+            {
+                MyAdoHelper.DoQuery("/app_data/MyDB.mdf", sqlInsert);
+            }
         }
 
 
