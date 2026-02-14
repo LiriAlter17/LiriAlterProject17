@@ -55,6 +55,7 @@ public partial class Register : System.Web.UI.Page
             else
             {
                 MyAdoHelper.DoQuery("/app_data/MyDB.mdf", sqlInsert);
+                Response.Redirect("HomePage.aspx");
             }
         }
 

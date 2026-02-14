@@ -19,20 +19,28 @@ public partial class Login : System.Web.UI.Page
             string email = Request.Form["email"];
             string password = Request.Form["password"];
 
-            string sql1 =
+            if (email == "liri.alter@gmail.com" && password == "Admin17")
+            {
+                Response.Redirect("Members.aspx");
+            }
+            else
+            {
+
+                string sql1 =
             "SELECT * FROM tUsers " +
             "WHERE Email = N'" + email + "' " +
             "AND Password = N'" + password + "'";
 
-            bool userExists = MyAdoHelper.IsExist(sql1);
+                bool userExists = MyAdoHelper.IsExist(sql1);
 
-            if (userExists)
-            {
-                msg1 = "You are good to go.";
-            }
-            else
-            {
-                msg1 = "User doesn't exist.";
+                if (userExists)
+                {
+                    msg1 = "You are good to go.";
+                }
+                else
+                {
+                    Response.Redirect("HomePage.aspx");
+                }
             }
         }
 

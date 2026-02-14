@@ -21,7 +21,7 @@
         <td>Password: 
         </td>
         <td>
-            <input type="text" name="password" id="password" placeholder="Enter password here">
+            <input type="password"  name="password" id="password" placeholder="Enter password here">
         </td>
     </tr>
          <tr>
