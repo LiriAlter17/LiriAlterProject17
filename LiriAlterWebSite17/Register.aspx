@@ -35,7 +35,7 @@
                 <td>Last name: 
                 </td>
                 <td>
-                    <input type="text" name="lastName" id="lastName" placeholder="Enter lant name here">
+                    <input type="text" name="lastName" id="lastName" placeholder="Enter last name here">
                 </td>
             </tr>
             <tr>
