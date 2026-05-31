@@ -8,9 +8,10 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
 
 
-    <h2>Home Page.</h2>
+    <h2>LA17-fragrances</h2>
 
-    <br />
+    <hr/>
+    <h5>parfumery valid information</h5>
     <br />
     <br />
     <br />
