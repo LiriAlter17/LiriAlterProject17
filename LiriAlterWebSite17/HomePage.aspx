@@ -40,7 +40,7 @@
             %>
 
 
-            <td style="text-align: center; background-color:darkcyan; border: 1px solid #000000"><%= row * col %></td>
+            <td style="text-align: center; background-color:maroon; border: 1px solid #000000"><%= row * col %></td>
 
 
             <%
