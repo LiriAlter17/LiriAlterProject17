@@ -29,7 +29,7 @@ public class MyAdoHelper
         // TODO: Add constructor logic here
         //
     }
-
+      
     /// <summary>
     /// הפעולה מקבל נתיב לקובץ בסיס הנתונים ויוצרת קשר אל בסיס הנתונים
     /// </summary>
