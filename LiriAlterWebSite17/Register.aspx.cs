@@ -55,7 +55,11 @@ public partial class Register : System.Web.UI.Page
             else
             {
                 MyAdoHelper.DoQuery("/app_data/MyDB.mdf", sqlInsert);
+                Session["userType"] = "user";
+                Session["userName"] = firstName;
                 Response.Redirect("HomePage.aspx");
+
+
             }
         }
 

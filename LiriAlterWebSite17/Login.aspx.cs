@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -21,6 +22,7 @@ public partial class Login : System.Web.UI.Page
 
             if (email == "liri.alter@gmail.com" && password == "Admin17")
             {
+                Session["userType"] = "admin";
                 Response.Redirect("Members.aspx");
             }
             else
@@ -31,15 +33,17 @@ public partial class Login : System.Web.UI.Page
             "WHERE Email = N'" + email + "' " +
             "AND Password = N'" + password + "'";
 
-                bool userExists = MyAdoHelper.IsExist(sql1);
+                DataTable users = MyAdoHelper.ExecuteDataTable(sql1);
 
-                if (userExists)
+                if (users.Rows.Count==1)
                 {
-                    msg1 = "You are good to go.";
+                    Session["userType"] = "user";
+                    Session["userName"] = users.Rows[0]["firstName"].ToString();
+                    Response.Redirect("HomePage.aspx");
                 }
                 else
                 {
-                    Response.Redirect("HomePage.aspx");
+                    msg1 = "invalid";
                 }
             }
         }

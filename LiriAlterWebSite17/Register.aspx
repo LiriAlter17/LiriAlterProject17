@@ -6,8 +6,12 @@
 
     <h1>Register.</h1>
 
-      
+    
+    
+
     <form name="formPage" method="post" runat="server">
+
+        <div  name="inputDiv" id="inputDiv">
 
         <table>
              <tr>
@@ -121,13 +125,20 @@
 
         <% =msg%> <br />
 
-
+        </div>
          
         
 
 
 
     </form>
+
+
+
+
+
+
+
 
 </asp:Content>
 
