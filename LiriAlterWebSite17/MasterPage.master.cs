@@ -17,6 +17,7 @@ public partial class MasterPage : System.Web.UI.MasterPage
     public string UpdateDetailsVisible = "";
     public string LoginVisible = "";
     public string MembersVisible = "";
+    public string FragrancesVisible = "";
     public string UserName = "Guest";
     public string LogoutVisible = "display: none;";
     
@@ -42,6 +43,7 @@ public partial class MasterPage : System.Web.UI.MasterPage
             SearchVisible = "display: none;";
             ComplexSearchVisible = "display: none;";
             SearchLikeVisible = "display: none;";
+            FragrancesVisible = "display: none;";
             ComplexSearchLikeVisible = "display: none;";
             UpdateDetailsVisible = "display: none;";
             MembersVisible = "display: none;";

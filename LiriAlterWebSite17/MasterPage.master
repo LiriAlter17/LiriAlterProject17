@@ -121,6 +121,8 @@
             <img src="images/user-pen-solid.png" alt="Update Details" /> Update Details</a>
         <a href="Members.aspx" style="<%= MembersVisible %>">
             <img src="images/user-group-solid.png" alt="Members" /> Members</a>
+        <a href="Fragrances.aspx" style="<%= FragrancesVisible %>">
+            <img src="images/spray-can-solid.png" alt="Fragrances" /> Fragrances</a>
     </nav>
 
     <!-- Page content -->
