@@ -286,7 +286,7 @@
             --%>
 
             <div class="collection-card">
-                <img src="images/KilianAngelsShareParadis.jpg" alt="Kilian Angels Share Paradis."/>
+                <img src="images/KilianAngelsShareParadis.jpg" alt="Kilian Angels Share Paradis"/>
                 <div class="card-info">
                     <p class="card-name">Kilian Angels Share Paradis</p>
                     <p class="card-note">Raspberry · Cognac · Caramel</p>
