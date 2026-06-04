@@ -257,7 +257,7 @@
         <p class="hero-subtitle">Fragrances for those who remember</p>
         <div class="hero-divider"></div>
         <p class="hero-desc">
-            Every bottle tells a story. We craft rare, intimate scents from the finest
+            Every bottle tells a story. We talk about rare, intimate scents from the finest
             raw materials — aged woods, pressed petals, and resins that carry memory
             across time. This is not mass perfumery. This is something personal.
         </p>
@@ -266,7 +266,7 @@
 
     <!-- ═══ FEATURED COLLECTION ═══ -->
     <section class="section collections-section">
-        <p class="section-label">Our Collections</p>
+        <p class="section-label">The Stars Of The Show</p>
         <h2 class="section-title">Scents that linger</h2>
 
         <div class="collections-grid">
@@ -335,7 +335,7 @@
         </div>
         <div class="about-right">
             <div class="about-stat">
-                <div class="about-stat-num">17</div>
+                <div class="about-stat-num">17+</div>
                 <div class="about-stat-label">Signature accords</div>
             </div>
             <div class="about-stat">
@@ -343,7 +343,7 @@
                 <div class="about-stat-label">Natural base materials</div>
             </div>
             <div class="about-stat">
-                <div class="about-stat-num">6–8</div>
+                <div class="about-stat-num">4–12</div>
                 <div class="about-stat-label">Hours of wear per application</div>
             </div>
         </div>
@@ -353,7 +353,6 @@
     <!-- ═══ FOOTER STRIP ═══ -->
     <div class="footer-strip">
         <span class="footer-brand">LA17 Fragrances</span>
-        <span class="footer-copy">&copy; 2024 &nbsp;·&nbsp; All rights reserved</span>
     </div>
 
 </div>
