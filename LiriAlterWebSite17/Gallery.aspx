@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Gallery.aspx.cs" Inherits="Gallery" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
     <style>
         :root {
             --crimson-deep:  #3D0C0C;
@@ -12,14 +13,11 @@
             --cream-dark:    #EDE4D8;
             --text-on-dark:  #F5EDE3;
             --text-muted:    #C4A98A;
-
-            --font-serif:    Georgia, 'Times New Roman', Times, serif;
-            --font-sans:     'Trebuchet MS', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         .la17-gallery * { box-sizing: border-box; margin: 0; padding: 0; }
         .la17-gallery {
-            font-family: var(--font-sans);
+            font-family: 'Jost', sans-serif;
             background: var(--cream);
             color: var(--crimson-deep);
         }
@@ -40,7 +38,6 @@
             pointer-events: none;
         }
         .gallery-hero-eyebrow {
-            font-family: var(--font-sans);
             font-size: 10px;
             font-weight: 300;
             letter-spacing: 0.4em;
@@ -49,7 +46,7 @@
             margin-bottom: 20px;
         }
         .gallery-hero-title {
-            font-family: var(--font-serif);
+            font-family: 'Cormorant Garamond', serif;
             font-size: clamp(44px, 7vw, 72px);
             font-weight: 300;
             color: var(--text-on-dark);
@@ -60,7 +57,7 @@
             color: var(--crimson-light);
         }
         .gallery-hero-sub {
-            font-family: var(--font-serif);
+            font-family: 'Cormorant Garamond', serif;
             font-style: italic;
             font-size: 16px;
             color: var(--text-muted);
@@ -75,7 +72,6 @@
             margin: 0 auto;
         }
         .section-label {
-            font-family: var(--font-sans);
             font-size: 10px;
             font-weight: 400;
             letter-spacing: 0.4em;
@@ -156,14 +152,13 @@
             transform: translateY(0);
         }
         .gallery-caption-name {
-            font-family: var(--font-serif);
+            font-family: 'Cormorant Garamond', serif;
             font-size: 18px;
             font-weight: 400;
             color: var(--text-on-dark);
             line-height: 1.2;
         }
         .gallery-caption-note {
-            font-family: var(--font-sans);
             font-size: 11px;
             font-weight: 300;
             letter-spacing: 0.18em;
@@ -183,14 +178,13 @@
             gap: 12px;
         }
         .footer-brand {
-            font-family: var(--font-serif);
+            font-family: 'Cormorant Garamond', serif;
             font-size: 22px;
             font-weight: 300;
             color: var(--text-on-dark);
             letter-spacing: 0.08em;
         }
         .footer-copy {
-            font-family: var(--font-sans);
             font-size: 11px;
             font-weight: 300;
             letter-spacing: 0.12em;
@@ -203,6 +197,7 @@
                 grid-template-columns: 1fr 1fr;
             }
             .gallery-item.span2 { grid-column: span 2; }
+            /* On mobile all portraits become standard portrait, wides stay wide */
         }
     </style>
 </asp:Content>
@@ -226,113 +221,104 @@
             <!-- Row 1: wide (spans 2) + portrait -->
             <div class="gallery-item span2 ratio-wide">
                 <div class="gallery-item-inner"></div>
-                <img src="images/54.2.jpg" alt="Parfums de Marly Althair" />
+                <img src="images/TomFordLostCherry.jpg" alt="Tom Ford - Lost Cherry"/>
                 <div class="gallery-caption">
-                    <p class="gallery-caption-name">Parfums de Marly — Althair</p>
-                    <p class="gallery-caption-note">Woody · Aromatic</p>
+                    <p class="gallery-caption-name">Tom Ford - Lost Cherry</p>
+                    <p class="gallery-caption-note">Black Cherry · Cherry Liqueur · Tonka Bean</p>
                 </div>
             </div>
 
             <div class="gallery-item ratio-portrait">
                 <div class="gallery-item-inner"></div>
-                <img src="images/16.jpg" alt="Fragrance" />
+                <img src="images/16.jpg" alt="Xerjoff - Naxos" />
                 <div class="gallery-caption">
-                    <p class="gallery-caption-name">Fragrance No. 16</p>
-                    <p class="gallery-caption-note">Signature Scent</p>
+                    <p class="gallery-caption-name">Xerjoff - Naxos</p>
+                    <p class="gallery-caption-note">Honey · Lavender · Vanilla</p>
                 </div>
             </div>
 
             <!-- Row 2: portrait + wide (spans 2) -->
             <div class="gallery-item ratio-portrait">
                 <div class="gallery-item-inner"></div>
-                <img src="images/M1_PACIFIC_CHILL_VISUAL_LVCOM_1600x2000_DII.jpg" alt="Louis Vuitton Pacific Chill" />
+                <img src="images/M1_PACIFIC_CHILL_VISUAL_LVCOM_1600x2000_DII.jpg" alt="Louis Vuitton - Pacific Chill" />
                 <div class="gallery-caption">
-                    <p class="gallery-caption-name">Louis Vuitton — Pacific Chill</p>
-                    <p class="gallery-caption-note">Fresh · Aquatic</p>
+                    <p class="gallery-caption-name">Louis Vuitton - Pacific Chill</p>
+                    <p class="gallery-caption-note">Citron · Apricot · Fig</p>
                 </div>
             </div>
 
             <div class="gallery-item span2 ratio-wide">
                 <div class="gallery-item-inner"></div>
-                <img src="images/Parfumsamples_Noten_Stephane_Humbert_Lucas_777_God_Of_Fire_Eau_de_Parfum_4.jpg" alt="Stephane Humbert Lucas 777 God of Fire" />
+                <img src="images/XerjoffTorino21.jpg" alt="Xerjoff - Torino 21"/>
                 <div class="gallery-caption">
-                    <p class="gallery-caption-name">SHL 777 — God of Fire</p>
-                    <p class="gallery-caption-note">Oriental · Smoky</p>
+                    <p class="gallery-caption-name">Xerjoff - Torino 21</p>
+                    <p class="gallery-caption-note">Lemon · Black Currant · Vervain</p>
                 </div>
             </div>
 
             <!-- Row 3: wide (spans 2) + portrait -->
             <div class="gallery-item span2 ratio-wide">
                 <div class="gallery-item-inner"></div>
-                <img src="images/p465332-av-05-zoom.jpg" alt="Fragrance" />
+                <img src="images/XerjoffAlexandriaII.jpg" alt="Xerjoff - Alexandria II"/>
                 <div class="gallery-caption">
-                    <p class="gallery-caption-name">Curated Pick</p>
-                    <p class="gallery-caption-note">Rare · Refined</p>
+                    <p class="gallery-caption-name">Xerjoff - Alexandria II</p>
+                    <p class="gallery-caption-note">Apple · Cinnamon · Vanilla</p>
                 </div>
             </div>
 
             <div class="gallery-item ratio-portrait">
                 <div class="gallery-item-inner"></div>
-                <img src="images/images.jpg" alt="Fragrance" />
+                <img src="images/YSLBabycatRawBourbon.jpg" alt="YSL - Babycat Raw Bourbon"/>
                 <div class="gallery-caption">
-                    <p class="gallery-caption-name">Curated Pick</p>
-                    <p class="gallery-caption-note">Rare · Refined</p>
+                    <p class="gallery-caption-name">YSL - Babycat Raw Bourbon</p>
+                    <p class="gallery-caption-note">Pink Pepper · Saffron · Suede</p>
                 </div>
             </div>
 
             <!-- Row 4: portrait + wide (spans 2) -->
             <div class="gallery-item ratio-portrait">
                 <div class="gallery-item-inner"></div>
-                <img src="images/images.jpg" alt="Fragrance name" />
+                <img src="images/KilianAngelsShareParadis.jpg" alt="Kilian - Angels Share Paradis"/>
                 <div class="gallery-caption">
-                    <p class="gallery-caption-name">Brand — Fragrance Name</p>
-                    <p class="gallery-caption-note">Note · Note</p>
+                    <p class="gallery-caption-name">Kilian - Angels Share Paradis</p>
+                    <p class="gallery-caption-note">Raspberry · Cognac · Caramel</p>
                 </div>
             </div>
 
             <div class="gallery-item span2 ratio-wide">
                 <div class="gallery-item-inner"></div>
-                <img src="images/images.jpg" alt="Fragrance name" />
+                <img src="images/StephaneHumbertLucasVenomIncarnat.jpg" alt="Stephane Humbert Lucas - Venom Incarnat"/>
                 <div class="gallery-caption">
-                    <p class="gallery-caption-name">Brand — Fragrance Name</p>
-                    <p class="gallery-caption-note">Note · Note</p>
+                    <p class="gallery-caption-name">Stephane Humbert Lucas - Venom Incarnat</p>
+                    <p class="gallery-caption-note">Wild Strawberry · Raspberry · Caramel</p>
                 </div>
             </div>
 
             <!-- Row 5: three portraits -->
             <div class="gallery-item ratio-portrait">
                 <div class="gallery-item-inner"></div>
-                <img src="images/images.jpg" alt="Fragrance name" />
+                <img src="images/GiorgioArmaniStrongerWithYouPowerfully.jpg" alt="Giorgio Armani - Stronger With You Powerfully"/>
                 <div class="gallery-caption">
-                    <p class="gallery-caption-name">Brand — Fragrance Name</p>
-                    <p class="gallery-caption-note">Note · Note</p>
+                    <p class="gallery-caption-name">Giorgio Armani - Stronger With You Powerfully</p>
+                    <p class="gallery-caption-note">Cherry · Spices · Amberwood</p>
                 </div>
             </div>
 
             <div class="gallery-item ratio-portrait">
                 <div class="gallery-item-inner"></div>
-                <img src="images/images.jpg" alt="Fragrance name" />
+                <img src="images/ValentinoUomoBornInRomaCoralFantasy.jpg" alt="Valentino - Uomo Born In Roma Coral Fantasy"/>
                 <div class="gallery-caption">
-                    <p class="gallery-caption-name">Brand — Fragrance Name</p>
-                    <p class="gallery-caption-note">Note · Note</p>
+                    <p class="gallery-caption-name">Valentino - Uomo Born In Roma Coral Fantasy</p>
+                    <p class="gallery-caption-note">Red Apple · Bourbon Geranium · Tobacco Leaf</p>
                 </div>
             </div>
 
             <div class="gallery-item ratio-portrait">
                 <div class="gallery-item-inner"></div>
-                <img src="images/images.jpg" alt="Fragrance name" />
+                <img src="images/ParfumsDeMarlyLayton.jpg" alt="Parfums De Marly - Layton" />
                 <div class="gallery-caption">
-                    <p class="gallery-caption-name">Brand — Fragrance Name</p>
-                    <p class="gallery-caption-note">Note · Note</p>
-                </div>
-            </div>
-
-            <div class="gallery-item ratio-portrait">
-                <div class="gallery-item-inner"></div>
-                <img src="images/images.jpg" alt="Fragrance name" />
-                <div class="gallery-caption">
-                    <p class="gallery-caption-name">Brand — Fragrance Name</p>
-                    <p class="gallery-caption-note">Note · Note</p>
+                    <p class="gallery-caption-name">Parfums De Marly - Layton</p>
+                    <p class="gallery-caption-note">Apple · Geranium · Pepper</p>
                 </div>
             </div>
 
@@ -347,3 +333,4 @@
 
 </div>
 </asp:Content>
+
