@@ -11,10 +11,6 @@ public partial class MasterPage : System.Web.UI.MasterPage
     public string RegisterVisible= "";
     public string ManagerVisible = "";
     public string SearchVisible = "";
-    public string ComplexSearchVisible = "";
-    public string SearchLikeVisible = "";
-    public string ComplexSearchLikeVisible = "";
-    public string UpdateDetailsVisible = "";
     public string LoginVisible = "";
     public string MembersVisible = "";
     public string FragrancesVisible = "";
@@ -39,11 +35,7 @@ public partial class MasterPage : System.Web.UI.MasterPage
             LogoutVisible = "display: none;";
             ManagerVisible = "display: none;";
             SearchVisible = "display: none;";
-            ComplexSearchVisible = "display: none;";
-            SearchLikeVisible = "display: none;";
             FragrancesVisible = "display: none;";
-            ComplexSearchLikeVisible = "display: none;";
-            UpdateDetailsVisible = "display: none;";
             MembersVisible = "display: none;";
 
         } else if (Session["userType"].ToString() == "admin"){//administrator

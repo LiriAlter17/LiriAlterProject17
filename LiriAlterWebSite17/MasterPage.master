@@ -111,14 +111,6 @@
             <img src="images/user-tie-solid.png" alt="Manager" /> Manager</a>
         <a href="Search.aspx" style="<%= SearchVisible %>">
             <img src="images/magnifying-glass-solid.png" alt="Search" /> Search</a>
-        <a href="ComplexSearch.aspx" style="<%= ComplexSearchVisible %>">
-            <img src="images/sliders-solid.png" alt="Complex Search" /> Complex Search</a>
-        <a href="SearchLike.aspx" style="<%= SearchLikeVisible %>">
-            <img src="images/magnifying-glass-plus-solid.png" alt="Search Like" /> Search like</a>
-        <a href="ComplexSearchLike.aspx" style="<%= ComplexSearchLikeVisible %>">
-            <img src="images/sliders-side-solid.png" alt="Complex Search Like" /> Complex Search Like</a>
-        <a href="UpdateDetails.aspx" style="<%= UpdateDetailsVisible %>">
-            <img src="images/user-pen-solid.png" alt="Update Details" /> Update Details</a>
         <a href="Members.aspx" style="<%= MembersVisible %>">
             <img src="images/user-group-solid.png" alt="Members" /> Members</a>
         <a href="Fragrances.aspx" style="<%= FragrancesVisible %>">

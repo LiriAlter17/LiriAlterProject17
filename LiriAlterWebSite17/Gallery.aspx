@@ -240,7 +240,7 @@
             <!-- Row 2: portrait + wide (spans 2) -->
             <div class="gallery-item ratio-portrait">
                 <div class="gallery-item-inner"></div>
-                <img src="images/M1_PACIFIC_CHILL_VISUAL_LVCOM_1600x2000_DII.jpg" alt="Louis Vuitton - Pacific Chill" />
+                <img src="images/LouisVuittonPacificChill.jpg" alt="Louis Vuitton - Pacific Chill" />
                 <div class="gallery-caption">
                     <p class="gallery-caption-name">Louis Vuitton - Pacific Chill</p>
                     <p class="gallery-caption-note">Citron · Apricot · Fig</p>

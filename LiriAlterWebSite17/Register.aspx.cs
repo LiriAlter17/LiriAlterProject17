@@ -48,16 +48,14 @@ public partial class Register : System.Web.UI.Page
 
             bool userExists = MyAdoHelper.IsExist(sql);
 
-            if (userExists)
+            if (userExists || email.ToLower() == "liri.alter@gmail.com")
             {
                 msg = "User already exists.";
             }
             else
             {
                 MyAdoHelper.DoQuery("/app_data/MyDB.mdf", sqlInsert);
-                Session["userType"] = "user";
-                Session["userName"] = firstName;
-                Response.Redirect("HomePage.aspx");
+                Response.Redirect("Login.aspx");
 
 
             }

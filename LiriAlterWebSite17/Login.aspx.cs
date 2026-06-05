@@ -20,10 +20,10 @@ public partial class Login : System.Web.UI.Page
             string email = Request.Form["email"];
             string password = Request.Form["password"];
 
-            if (email == "liri.alter@gmail.com" && password == "Admin17")
+            if (email == "liri.alter@gmail.com" && password == "Admin1717")
             {
                 Session["userType"] = "admin";
-                Response.Redirect("Members.aspx");
+                Response.Redirect("HomePage.aspx");
             }
             else
             {

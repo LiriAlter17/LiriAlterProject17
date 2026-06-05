@@ -27,6 +27,7 @@ public partial class Fragrances : System.Web.UI.Page
         {
             st1 += "<table border = '1.5'>";
             st1 += "<tr>";
+            st1 += "<td>number</td>";
             st1 += "<td>Company</td>";
             st1 += "<td>Name</td>";
             st1 += "<td>Scent Profile</td>";
@@ -69,6 +70,7 @@ public partial class Fragrances : System.Web.UI.Page
             {
                 st2 += "<table border = '1.5'>";
                 st2 += "<tr>";
+                st2 += "<td>number</td>";
                 st2 += "<td>Company</td>";
                 st2 += "<td>Name</td>";
                 st2 += "<td>Scent Profile</td>";
@@ -91,48 +93,6 @@ public partial class Fragrances : System.Web.UI.Page
             }
         }
 
-        //enter fragrances for manager
-
-        if (Session["userType"].ToString() == "admin")
-        {
-            AddFragrancesVisible = "";
-        }
-
-        if (Page.IsPostBack && (Session["userType"].ToString() == "admin"))
-        {
-
-            string Company = Request.Form["Company"];
-            string Name = Request.Form["Name"];
-            string ScentProfile = Request.Form["ScentProfile"];
-            string MarketValueUSD = Request.Form["MarketValue(USD)"];
-            string GenderLeaning = Request.Form["GenderLeaning"];
-            string LastingTimeHours = Request.Form["LastingTime(Hours)"];
-
-            string sqlInsert =
-            "INSERT INTO tFragrances VALUES (" +
-            "N'" + Company + "'," +
-            "N'" + Name + "'," +
-            "N'" + ScentProfile + "'," +
-            "N'" + MarketValueUSD + "'," +
-            "N'" + GenderLeaning + "'," +
-            "N'" + LastingTimeHours + "'" +
-            ")";
-
-            string sql =
-            "SELECT * FROM tFragrances " +
-            "WHERE Company = N'" + Company + "' " +
-            "AND Name = N'" + Name + "'";
-
-            bool userExists = MyAdoHelper.IsExist(sql);
-
-            if (userExists)
-            {
-                msg = "Fragrance is already in the list.";
-            }
-            else
-            {
-                MyAdoHelper.DoQuery("/app_data/MyDB.mdf", sqlInsert);
-            }
-        }
+     
     }
 }

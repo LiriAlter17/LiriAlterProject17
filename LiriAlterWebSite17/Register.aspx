@@ -1,7 +1,55 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Register.aspx.cs" Inherits="Register" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+
+    <script type="text/javascript">
+
+        function validateForm() {
+
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var firstName = document.getElementById("firstName").value;
+            var lastName = document.getElementById("lastName").value;
+            var age = document.getElementById("age").value;
+
+           
+
+            var selectedValue = false;
+            document.getElementsByName("Gender").forEach(radio => {
+                if (radio.checked) {
+                    selectedValue = true;
+                }
+            });
+            
+
+            if (email == "" || password == "" || firstName == "" || lastName == "" || age == "" || !selectedValue ) {
+                alert("Please fill in all required fields.");
+                return false;
+            }
+
+
+            // Basic email format validation
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+
+            var passwordPattern = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}$/;
+            if (!passwordPattern.test(password)) {
+                alert("Please enter a valid password. requirements: at least 1 lower case letter, at least 1 upper case letter , at least 1 number, min 8 characters.");
+                return false;
+            }
+
+
+            return true; // Allow form submission if validation passes
+        }
+    </script>
+
 </asp:Content>
+
+
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
 
     <h1>Register.</h1>
@@ -15,28 +63,28 @@
 
         <table>
              <tr>
-                <td>Email: 
+                <td>* Email: 
                 </td>
                 <td>
                     <input type="text" name="email" id="email" placeholder="Enter email here">
                 </td>
             </tr>
              <tr>
-                <td>Password: 
+                <td>* Password: 
                 </td>
                 <td>
-                    <input type="text" name="password" id="password" placeholder="Enter password here">
+                    <input type="password" name="password" id="password" placeholder="Enter password here">
                 </td>
             </tr>
             <tr>
-                <td>First name:
+                <td>* First name:
                 </td>
                 <td>
                     <input type="text" name="firstName" id="firstName" placeholder="Enter first name here">
                 </td>
             </tr>
             <tr>
-                <td>Last name:
+                <td>* Last name:
                 </td>
                 <td>
                     <input type="text" name="lastName" id="lastName" placeholder="Enter last name here">
@@ -98,7 +146,7 @@
     <td>Vetiver</td>
 </tr>
             <tr>
-                <td colspan="2">Gender: 
+                <td colspan="2">* Gender: 
                 </td>
             </tr>
             <tr>
@@ -120,7 +168,7 @@
             </tr>
 
             <tr>
-                <td>Age:
+                <td>* Age:
                 </td>
                 <td>
                     <select name="age" id="age">
@@ -142,7 +190,7 @@
             </tr>
             <tr>
                 <td colspan="2" style="text-align: right">
-                    <input id="Submit1" type="submit" value="send" />
+                    <input id="Submit1" type="submit" value="send" onclick="return validateForm();" />
 
                 </td>
             </tr>
