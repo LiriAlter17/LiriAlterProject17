@@ -328,7 +328,6 @@
     <!-- ═══ FOOTER ═══ -->
     <div class="footer-strip">
         <span class="footer-brand">LA17 Fragrances</span>
-        <span class="footer-copy">&copy; 2024 &nbsp;·&nbsp; All rights reserved</span>
     </div>
 
 </div>

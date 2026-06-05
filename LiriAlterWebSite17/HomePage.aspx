@@ -252,7 +252,7 @@
 
     <!-- ═══ HERO ═══ -->
     <section class="hero">
-        <p class="hero-eyebrow">Est. 2024 &nbsp;·&nbsp; Artisan Perfumery</p>
+        <p class="hero-eyebrow">Est. 2026 · Artisan Perfumery</p>
         <h1 class="hero-title">LA<em>17</em></h1>
         <p class="hero-subtitle">Fragrances for those who remember</p>
         <div class="hero-divider"></div>
