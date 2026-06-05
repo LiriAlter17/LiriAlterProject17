@@ -25,7 +25,7 @@ public partial class Register : System.Web.UI.Page
             string firstName = Request.Form["firstName"];
             string lastName = Request.Form["lastName"];
             string CB = Request.Form["CB"];
-            string Social = Request.Form["Social"];
+            string Gender = Request.Form["Gender"];
             string age = Request.Form["age"];
             string freeTextTA = Request.Form["freeTextTA"];
 
@@ -34,7 +34,7 @@ public partial class Register : System.Web.UI.Page
             "N'" + firstName + "'," +
             "N'" + lastName + "'," +
             "N'" + CB + "'," +
-            "N'" + Social + "'," +
+            "N'" + Gender + "'," +
             "N'" + age + "'," +
             "N'" + freeTextTA + "'," +
             "N'" + email + "'," +

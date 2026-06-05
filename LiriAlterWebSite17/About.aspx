@@ -271,6 +271,7 @@
         <p class="section-label">Why I built this</p>
         <h2 class="story-heading">The reason I chose to make this website</h2>
         <div class="story-body">
+            <p>I was born in 28/6/2010, currently 15 years old.</p>
             <p>Fragrances is something that I've been taking interest in for about 4 years now.</p>
             <p>Personally, I have a pretty large collection with 14 fragrances at the moment which I all love.</p>
             <p>But I know that it's a huge amount of fragrances for any other person that doesn't specialize in that topic. That's why I created this website!</p>

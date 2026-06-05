@@ -25,12 +25,12 @@ public partial class Members : System.Web.UI.Page
         {
             st1 += "<table border = '1.5'>";
             st1 += "<tr>";
-            st1 += "<td>First name</td>";
-            st1 += "<td>Last name</td>";
-            st1 += "<td>Hobbies</td>";
-            st1 += "<td>Social</td>";
+            st1 += "<td>First Name</td>";
+            st1 += "<td>Last Name</td>";
+            st1 += "<td>Liked Notes</td>";
+            st1 += "<td>Gender</td>";
             st1 += "<td>Age</td>";
-            st1 += "<td>Free Text</td>";
+            st1 += "<td>Favorite Fragrance And Three Notes In It</td>";
             st1 += "<td>Email</td>";
             st1 += "<td>Password</td>";
             st1 += "</tr>";
@@ -69,12 +69,12 @@ public partial class Members : System.Web.UI.Page
             {
                 st2 += "<table border = '1.5'>";
                 st2 += "<tr>";
-                st2 += "<td>First name</td>";
-                st2 += "<td>Last name</td>";
-                st2 += "<td>Hobbies</td>";
-                st2 += "<td>Social</td>";
+                st2 += "<td>First Name</td>";
+                st2 += "<td>Last Name</td>";
+                st2 += "<td>Liked Notes</td>";
+                st2 += "<td>Gender</td>";
                 st2 += "<td>Age</td>";
-                st2 += "<td>Free Text</td>";
+                st2 += "<td>Favorite Fragrance And Three Notes In It</td>";
                 st2 += "<td>Email</td>";
                 st2 += "<td>Password</td>";
                 st2 += "</tr>";

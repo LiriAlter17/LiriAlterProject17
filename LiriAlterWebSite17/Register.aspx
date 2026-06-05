@@ -29,14 +29,14 @@
                 </td>
             </tr>
             <tr>
-                <td>First name: 
+                <td>First name:
                 </td>
                 <td>
                     <input type="text" name="firstName" id="firstName" placeholder="Enter first name here">
                 </td>
             </tr>
             <tr>
-                <td>Last name: 
+                <td>Last name:
                 </td>
                 <td>
                     <input type="text" name="lastName" id="lastName" placeholder="Enter last name here">
@@ -44,45 +44,79 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    Hobbies: 
+                    Fragrance Notes you find good smelling:
                 </td>
             </tr>
             <tr>
                 <td style="text-align: right">
-                    <input type="checkbox" name="CB" checked value="Football" id="FootballCB"/></td>
-                <td>Football</td>
+                    <input type="checkbox" name="CB" checked value="Vanilla" id="VanillaCB"/></td>
+                <td>Vanilla</td>
             </tr>
             <tr>
                 <td style="text-align: right">
-                    <input type="checkbox" name="CB" value="Basketdall" id="BasketballCB"/></td>
-                <td>Basketball</td>
+                    <input type="checkbox" name="CB" value="Bergamot" id="BergamotCB"/></td>
+                <td>Bergamot</td>
             </tr>
             <tr>
                 <td style="text-align: right">
-                    <input type="checkbox" name="CB" value="Surfing" id="SurfingCB"/></td>
-                <td>Surfing</td>
+                    <input type="checkbox" name="CB" value="Sandalwood" id="SandalwoodCB"/></td>
+                <td>Sandalwood</td>
             </tr>
+                        <tr>
+    <td style="text-align: right">
+        <input type="checkbox" name="CB" value="Jasmine" id="JasmineCB"/></td>
+    <td>Jasmine</td>
+</tr>
             <tr>
-                <td colspan="2">Favorites Social media: 
+    <td style="text-align: right">
+        <input type="checkbox" name="CB" value="Musk" id="MuskCB"/></td>
+    <td>Musk</td>
+</tr>
+            <tr>
+    <td style="text-align: right">
+        <input type="checkbox" name="CB" value="Patchouli" id="PatchouliCB"/></td>
+    <td>Patchouli</td>
+</tr>
+            <tr>
+    <td style="text-align: right">
+        <input type="checkbox" name="CB" value="Oud" id="OudCB"/></td>
+    <td>Oud</td>
+</tr>
+            <tr>
+    <td style="text-align: right">
+        <input type="checkbox" name="CB" value="Rose" id="RoseCB"/></td>
+    <td>Rose</td>
+</tr>
+            <tr>
+    <td style="text-align: right">
+        <input type="checkbox" name="CB" value="Amber" id="AmberCB"/></td>
+    <td>Amber</td>
+</tr>
+            <tr>
+    <td style="text-align: right">
+        <input type="checkbox" name="CB" value="Vetiver" id="VetiverCB"/></td>
+    <td>Vetiver</td>
+</tr>
+            <tr>
+                <td colspan="2">Gender: 
                 </td>
             </tr>
-
             <tr>
-                <td style="padding-left:20px">Instergam</td>
+                <td style="padding-left:20px">Female</td>
                 <td>
-                    <input type="radio" checked  name="Social" value="Instergam" id="InstergamRB"/></td>
+                    <input type="radio" name="Gender" value="Female" id="FemaleRB"/></td>
             </tr>
 
             <tr>
-                <td style="padding-left:20px">Facebook</td>
+                <td style="padding-left:20px">Male</td>
                 <td>
-                    <input type="radio" name="Social" value="Facebook" id="FacebookRB"/></td>
+                    <input type="radio" name="Gender" value="Male" id="MaleRB"/></td>
             </tr>
 
             <tr>
-                <td style="padding-left:20px">Tiktok</td>
+                <td style="padding-left:20px">Other</td>
                 <td>
-                    <input type="radio" name="Social" value="Tiktok" id="TiktokRB"/></td>
+                    <input type="radio" name="Gender" value="Other" id="OtherRB"/></td>
             </tr>
 
             <tr>
@@ -90,20 +124,20 @@
                 </td>
                 <td>
                     <select name="age" id="age">
-                        <option value="0">--select--</option>
-                        <option value="15">15</option>
-                        <option value="16">16</option>
-                        <option value="17">17</option>
+                        <option value="">--select--</option>
+                        <option value="-12">-12</option>
+                        <option value="13-17">13-17</option>
+                        <option value="18+">18+</option>
                     </select>
                 </td>
             </tr>
 
 
             <tr>
-                <td style="vertical-align: top">Tell something abote yourself:
+                <td style="vertical-align: top">Tell us what's your favorite fragrance and 3 notes from it:
                 </td>
                 <td>
-                    <textarea rows="5" cols="20" name="freeTextTA" id="freeTextTA" placeholdetextarea1r="Enter text"></textarea>
+                    <textarea rows="5" cols="100" name="freeTextTA" id="freeTextTA" placeholder="Example: Fragrance Name - note 1, note 2, note 3."></textarea>
                 </td>
             </tr>
             <tr>
