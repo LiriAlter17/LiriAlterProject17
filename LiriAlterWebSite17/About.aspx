@@ -258,7 +258,7 @@
     <div class="about-section">
         <p class="section-label">Site Developer</p>
         <div class="dev-card">
-            <img class="dev-photo" src="images/All-Roads-Lead-to-Rome.jpg" alt="A photo of Liri Alter" />
+            <img class="dev-photo" src="images/LiriAlterPic.jpg" alt="A photo of Liri Alter" />
             <div>
                 <p class="dev-info-name">Liri Alter</p>
                 <p class="dev-info-role">Founder &amp; Developer</p>

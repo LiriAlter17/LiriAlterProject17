@@ -14,7 +14,7 @@ public partial class Fragrances : System.Web.UI.Page
     public string AddFragrancesVisible = "display: none;";
     protected void Page_Load(object sender, EventArgs e)
     {
-        string sql1 = "SELECT * FROM [dbo].[tFragrances]";
+        string sql1 = "SELECT * FROM [dbo].[tFragrances] ORDER BY ID";
 
         DataTable dt1 = MyAdoHelper.ExecuteDataTable(sql1);
 
